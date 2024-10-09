@@ -46,7 +46,6 @@ if __name__ == '__main__':
 
     # 2e: Extract the center patch and place randomly in the image
     img_cpy = img.copy()
-    #crop image at center, 16x16
     img_patch = img_cpy[img_cpy.shape[0]//2-8:img_cpy.shape[0]//2+8, img_cpy.shape[1]//2-8:img_cpy.shape[1]//2+8,:]
 
     display_image('2 - e - Center Patch', img_patch)  
