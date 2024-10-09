@@ -56,7 +56,6 @@ if __name__ == '__main__':
     img_cpy[rand_coord[0]:rand_coord[0]+16, rand_coord[1]:rand_coord[1]+16] = img_patch
     display_image('2 - e - Center Patch Placed Random %d, %d' % (rand_coord[0], rand_coord[1]), img_cpy)  
     # 2f: Draw random rectangles and ellipses
-    # Random rectangles and ellipses with random colors and size
     img_cpy = img.copy()
     for i in range(5):
         color = (randint(0, 255), randint(0, 255), randint(0, 255))
