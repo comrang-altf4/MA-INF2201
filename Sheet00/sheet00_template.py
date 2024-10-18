@@ -40,6 +40,7 @@ if __name__ == '__main__':
 
     # 2d: one-line statement to perfom the operation above
     img_cpy = img.copy()
+    img_cpy = cv.cvtColor(img_cpy, cv.COLOR_BGR2RGB)
     img_gray_3d = cv.merge([img_gray_05, img_gray_05, img_gray_05]).astype(np.uint8)
     img_cpy = cv.subtract(img_cpy, img_gray_3d)
     display_image('2 - d - Reduced Intensity Image One-Liner', img_cpy)    
